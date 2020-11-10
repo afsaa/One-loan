@@ -40,19 +40,26 @@ header {
     justify-content: space-between;
 }
 header + img {
-    left: 14rem;
+    left: 12rem;
     bottom: 2rem;
+}
+header > span {
+    cursor: pointer;
+}
+header > span > img {
+    width: 5rem;
+    height: 4rem;
 }
 .hero > img {
     position: relative;
 }
-.hero > div {
+.hero__text-container {
     width: 100%;
     padding: 0 2rem;
     position: relative;
     bottom: 10rem;
 }
-.hero > div > h1 {
+.hero__text-container > h1 {
     font-size: 3.2rem;
     font-weight: 600;
     line-height: 3.8rem;
@@ -60,7 +67,7 @@ header + img {
     color: #FFFFFF;
     text-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.25);
 }
-.hero > div > h1 + h2 {
+.hero__text-container > h1 + h2 {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 2.5rem;
@@ -68,13 +75,13 @@ header + img {
     margin: 10rem 0 1.5rem 0;
     
 }
-.hero > div > p {
+.hero__text-container > p {
     font-weight: 400;
     font-size: 1.2rem;
     line-height: 1.9rem;
     color: var(--soft-pink);
 }
-.hero > div + img {
+.hero__text-container + img {
     bottom: 35rem;
     right: 13rem;
 }
@@ -82,10 +89,10 @@ header + img {
     width: 80%;
     position: absolute;
     top: 55rem;
-    left: 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    align-self: center;
     background: var(--green-gradient);
     font-family: inherit;
     font-size: 1.4rem;
@@ -96,7 +103,7 @@ header + img {
     color: #FFFFFF;
     box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.25);
 }
-.hero > button > img {
+.hero > button > span > img {
     width: 3rem;
 }
 .hero + section {

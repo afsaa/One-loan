@@ -39,16 +39,17 @@ header {
     align-items: center;
     justify-content: space-between;
 }
-header + img {
-    left: 12rem;
-    bottom: 2rem;
-}
 header > span {
     cursor: pointer;
 }
 header > span > img {
     width: 5rem;
     height: 4rem;
+}
+header + div {
+    position: relative;
+    align-self: flex-end;
+    left: 1.35rem;
 }
 .hero > img {
     position: relative;
@@ -84,6 +85,18 @@ header > span > img {
 .hero__text-container + img {
     bottom: 35rem;
     right: 13rem;
+}
+.hero__slider-container {
+    width: 80%;
+    position: absolute;
+    top: 47rem;
+    align-self: center;
+}
+.hero__slider-container input {
+    width: 100%;
+    position: relative;
+    /* color: -internal-light-dark(var(--soft-pink), var(--purple-primary));
+    background-color: -internal-light-dark(var(--soft-pink), var(--purple-primary)); */
 }
 .hero > button {
     width: 80%;
